@@ -29,13 +29,15 @@ try:
   # temperature is returned in Kelvin
   tout = float(data['main']['temp']) - 273.15
   hout = float(data['main']['humidity'])
+  P    = float(data['main']['pressure'])
 except:
   tout = float('nan')
   hout = float('nan')
+  P    = float('nan')
 
 
 #
 # output data
 #
-print "%0.2f %0.2f %0.2f %0.2f" % (tin, hin, tout, hout)
+print "%0.2f %0.2f %0.2f %0.2f %0.2f" % (tin, hin, tout, hout, P)
 
