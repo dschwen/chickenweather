@@ -7,6 +7,7 @@ import Adafruit_DHT as dht
 
 hin,tin = dht.read_retry(dht.DHT22, 4)
 
+
 #
 # obtain weather data for outside
 #
@@ -23,11 +24,15 @@ params = dict(
   appid=key
 )
 resp = requests.get(url=url, params=params)
-data = json.loads(resp.text)
+try:
+  data = json.loads(resp.text)
+  # temperature is returned in Kelvin
+  tout = float(data['main']['temp']) - 273.15
+  hout = float(data['main']['humidity'])
+except:
+  tout = float('nan')
+  hout = float('nan')
 
-# temperature is returned in Kelvin
-tout = float(data['main']['temp']) - 273.15
-hout = float(data['main']['humidity'])
 
 #
 # output data
