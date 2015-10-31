@@ -39,5 +39,7 @@ except:
 #
 # output data
 #
-print "%0.2f %0.2f %0.2f %0.2f %0.2f" % (tin, hin, tout, hout, P)
+from datetime import datetime
+now = datetime.now()
+print "%d %d %0.2f %0.2f %0.2f %0.2f %0.2f" % (now.hour, now.minute, tin, hin, tout, hout, P)
 
