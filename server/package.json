@@ -1,0 +1,13 @@
+{
+  "name": "chicken-server",
+  "version": "0.0.0",
+  "description": "JSON data server for the chickencoop",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dschwen/chickencoop.git"
+  },
+  "dependencies": {
+    "dateformat": ">1.0.0",
+    "flot": ">0.7.0"
+  }
+}
