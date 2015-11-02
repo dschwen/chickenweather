@@ -10,12 +10,9 @@ var data = [];
 updateData();
 
 // Routes
-app.use('express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 app.get('/data/today.json', function (req, res) {
   res.send(JSON.stringify(data));
-});
-app.get('/index.html', function (req, res) {
-  res.send('Cluck!');
 });
 
 // Start server
