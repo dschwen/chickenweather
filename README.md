@@ -28,3 +28,5 @@ and add the ```log_Th.sh``` to your ```/etc/crontab``
 ```
 
 This adds a script to reconnect to the wifi network in case the connection was dropped.
+
+* Using flot http://www.flotcharts.org/
