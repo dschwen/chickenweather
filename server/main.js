@@ -10,6 +10,7 @@ var data = [];
 updateData();
 
 // Routes
+app.use('express.static(__dirname + '/public'));
 app.get('/data/today.json', function (req, res) {
   res.send(JSON.stringify(data));
 });
