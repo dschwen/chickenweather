@@ -1,5 +1,6 @@
 {
   "name": "chicken-server",
+  "main": "main.js",
   "version": "0.0.0",
   "description": "JSON data server for the chickencoop",
   "repository": {

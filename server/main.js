@@ -40,6 +40,10 @@ function updateData()
     var array = f.toString().split('\n'),
         row;
     
+    // a new day
+    if (data.length > array.length)
+      data = [];
+
     for (var i = data.length; i < array.length-1; ++i) {
       row = array[i].split(' ');
       data[i] = [];

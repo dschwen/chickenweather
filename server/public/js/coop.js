@@ -37,8 +37,13 @@ $(function() {
       $('#values').fadeIn();
     }
  
-    $.plot("#plot", [temperature, humidity, exttemp, exthumi], {
-      xaxis: { mode: "time" }
+    $.plot("#plot", [
+        { data: exttemp, color: 'rgba(255,0,0,0.3)'}, 
+        { data: exthumi, color: 'rgba(0,0,255,0.3)'},
+        { label: "Temperature", data: temperature, color: 'rgb(255,0,0)'}, 
+        { label: "Humidity", data: humidity, color: 'rgb(0,0,255)'}
+      ], {
+        xaxis: { mode: "time" }
     });
   });
 });
