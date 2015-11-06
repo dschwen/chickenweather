@@ -4,3 +4,20 @@
 	width: 95%;
 	height: 400px;
 }
+
+#values {
+  visibility: none;
+  list-style: none;
+  font-size: 300%;
+  font-family: sans;
+  font-weight: bold;
+}
+
+#values li {
+  display: inline;
+  margin-right: 1em;
+}
+#values li div {
+  display: inline-block;
+  font-size: 45%;
+}

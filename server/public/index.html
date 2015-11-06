@@ -1,11 +1,29 @@
 <html>
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.flot.min.js"></script>
-<script src="js/jquery.flot.time.min.js"></script>
-<link rel="stylesheet" href="css/style.css"/>
+<head>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.flot.min.js"></script>
+  <script src="js/jquery.flot.time.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
 <body>
-<h1>Chicken coop</h1>
-<script src="js/coop.js"></script>
-<div id="plot"></div>
+  <h1>Chicken coop</h1>
+  <script src="js/coop.js"></script>
+  <div id="plot"></div>
+  <ul id="values">
+    <li>
+      <span id="Tnow"></span>&deg;C
+      <div>
+        <span id="Tmax"></span>&deg;C</br>
+        <span id="Tmin"></span>&deg;C
+      </div>
+    </li>
+    <li>
+      <span id="Hnow"></span>%
+      <div>
+        <span id="Hmax"></span>%</br>
+        <span id="Hmin"></span>%
+      </div>
+    </li>
+  </ul>
 </body>
 </html>
