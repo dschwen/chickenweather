@@ -5,7 +5,7 @@
 	height: 400px;
 }
 
-#values {
+.values {
   visibility: none;
   list-style: none;
   font-size: 300%;
@@ -13,11 +13,15 @@
   font-weight: bold;
 }
 
-#values li {
+.values li {
   display: inline;
   margin-right: 1em;
 }
-#values li div {
+.values li div {
   display: inline-block;
   font-size: 45%;
+}
+
+.extern {
+  color: gray;
 }
